@@ -18,7 +18,7 @@
 		3A24B1A01A5934A400A7F609 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A24B19F1A5934A400A7F609 /* libsqlite3.0.dylib */; };
 		3A24B1A21A59369F00A7F609 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A24B1A11A59369F00A7F609 /* UIKit.framework */; };
 		3A24B1A41A5936A600A7F609 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A24B1A31A5936A600A7F609 /* Foundation.framework */; };
-		3A24B1A81A59371000A7F609 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A24B1A51A59371000A7F609 /* libWeChatSDK.a */; };
+		3A24B1B71A59631000A7F609 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A24B1B61A59631000A7F609 /* libWeChatSDK.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,9 +48,9 @@
 		3A24B19F1A5934A400A7F609 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 		3A24B1A11A59369F00A7F609 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3A24B1A31A5936A600A7F609 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		3A24B1A51A59371000A7F609 /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libWeChatSDK.a; path = ../../../../Downloads/WeChatSDK_1.5/WeChatSDK_1.5_OnlyIphone/libWeChatSDK.a; sourceTree = "<group>"; };
-		3A24B1A61A59371000A7F609 /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WXApi.h; path = ../../../../Downloads/WeChatSDK_1.5/WeChatSDK_1.5_OnlyIphone/WXApi.h; sourceTree = "<group>"; };
-		3A24B1A71A59371000A7F609 /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WXApiObject.h; path = ../../../../Downloads/WeChatSDK_1.5/WeChatSDK_1.5_OnlyIphone/WXApiObject.h; sourceTree = "<group>"; };
+		3A24B1B41A59631000A7F609 /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
+		3A24B1B51A59631000A7F609 /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
+		3A24B1B61A59631000A7F609 /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +60,7 @@
 			files = (
 				3A24B1A41A5936A600A7F609 /* Foundation.framework in Frameworks */,
 				3A24B1A21A59369F00A7F609 /* UIKit.framework in Frameworks */,
-				3A24B1A81A59371000A7F609 /* libWeChatSDK.a in Frameworks */,
+				3A24B1B71A59631000A7F609 /* libWeChatSDK.a in Frameworks */,
 				3A24B1A01A5934A400A7F609 /* libsqlite3.0.dylib in Frameworks */,
 				3A24B19E1A59349B00A7F609 /* SystemConfiguration.framework in Frameworks */,
 				3A24B19C1A59348D00A7F609 /* libz.dylib in Frameworks */,
@@ -99,9 +99,9 @@
 		3A24B1711A59328F00A7F609 /* WechatDemo */ = {
 			isa = PBXGroup;
 			children = (
-				3A24B1A51A59371000A7F609 /* libWeChatSDK.a */,
-				3A24B1A61A59371000A7F609 /* WXApi.h */,
-				3A24B1A71A59371000A7F609 /* WXApiObject.h */,
+				3A24B1B41A59631000A7F609 /* WXApi.h */,
+				3A24B1B51A59631000A7F609 /* WXApiObject.h */,
+				3A24B1B61A59631000A7F609 /* libWeChatSDK.a */,
 				3A24B1741A59328F00A7F609 /* AppDelegate.swift */,
 				3A24B1761A59328F00A7F609 /* ViewController.swift */,
 				3A24B1781A59328F00A7F609 /* Main.storyboard */,
@@ -386,6 +386,7 @@
 					"$(inherited)",
 					/Users/ming/Downloads/WeChatSDK_1.5/WeChatSDK_1.5,
 					/Users/ming/Downloads/WeChatSDK_1.5/WeChatSDK_1.5_OnlyIphone,
+					"$(PROJECT_DIR)/WechatDemo",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = WechatDemo/WechatDemo_Bridging_Header.h;
@@ -407,6 +408,7 @@
 					"$(inherited)",
 					/Users/ming/Downloads/WeChatSDK_1.5/WeChatSDK_1.5,
 					/Users/ming/Downloads/WeChatSDK_1.5/WeChatSDK_1.5_OnlyIphone,
+					"$(PROJECT_DIR)/WechatDemo",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = WechatDemo/WechatDemo_Bridging_Header.h;
